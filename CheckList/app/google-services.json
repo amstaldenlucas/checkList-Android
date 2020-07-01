@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "512826729067",
+    "firebase_url": "https://fir-checklist-9f5a8.firebaseio.com",
+    "project_id": "fir-checklist-9f5a8",
+    "storage_bucket": "fir-checklist-9f5a8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:512826729067:android:ad9e5fcc3d3400d461072e",
+        "android_client_info": {
+          "package_name": "br.com.fatec.checkListAmstalden"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "512826729067-aqrf16rrq03lhb2qf4hq2qomt8r5nc75.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "br.com.fatec.checkListAmstalden",
+            "certificate_hash": "f37d566da984d3bfbc6e5442cd43517636c3cdc3"
+          }
+        },
+        {
+          "client_id": "512826729067-3hskfafecipmju23a7697rh7df8bmjq4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmnVKtpJojupHvfbBS0eVEyUPZWYtzPUI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "512826729067-3hskfafecipmju23a7697rh7df8bmjq4.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

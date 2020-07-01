@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="br.com.fatec.checkListAmstalden.CadastrarChecklist">
+
+    <TextView
+        android:id="@+id/txtTitJogoVelha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="CADASTRAR CHECKLIST"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnSair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="voltar"
+        android:text="Sair"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/lblTituloTarefa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="30dp"
+        android:text="Título Tarefa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitJogoVelha" />
+
+    <EditText
+        android:id="@+id/txtTituloTarefa"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBaseline_toBaselineOf="@id/lblTituloTarefa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblTituloTarefa"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/lblDataExecucao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:text="Data Execução"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lblTituloTarefa" />
+
+    <EditText
+        android:id="@+id/txtDataExecuta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintBaseline_toBaselineOf="@id/lblDataExecucao"
+        app:layout_constraintStart_toEndOf="@id/lblDataExecucao"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="123dp" />
+
+    <TextView
+        android:id="@+id/lblPrioridade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:text="Prioridade"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblDataExecucao" />
+
+    <RadioGroup
+        android:id="@+id/rgbPrioridadeTarefa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBaseline_toBaselineOf="@id/lblPrioridade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/lblPrioridade"
+        app:layout_constraintTop_toBottomOf="@+id/txtDataExecuta"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/rbPrioriBaixa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Baixa"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="101dp"
+            tools:layout_editor_absoluteY="201dp" />
+
+        <RadioButton
+            android:id="@+id/rbPrioriMedia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Media"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="183dp"
+            tools:layout_editor_absoluteY="201dp" />
+
+        <RadioButton
+            android:id="@+id/rbPrioriAlta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alta"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="270dp"
+            tools:layout_editor_absoluteY="200dp"
+
+            />
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/imgCadastraConta"
+        android:layout_width="70dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:onClick="cadastrarTarefa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnSair"
+        app:srcCompat="@drawable/ic_adiciona_tarefa_black"
+        tools:ignore="OnClick" />
+
+    <TextView
+        android:id="@+id/lblStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="60dp"
+        android:text="Status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lblPrioridade" />
+
+    <CheckBox
+        android:id="@+id/cbFeito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="30dp"
+        android:text="Feito"
+        app:layout_constraintStart_toEndOf="@+id/lblStatus"
+        app:layout_constraintTop_toBottomOf="@+id/rgbPrioridadeTarefa" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
